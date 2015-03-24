@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -59,9 +60,10 @@ WSGI_APPLICATION = 'mystie.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'csg_api_searchdb',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
+        'NAME': 'django_tut_db',
+        # TODO: delete this info
+        'USER': os.environ.get('PSQL_UNAME'),
+        'PASSWORD': os.environ.get('PSQL_PWORD'),
     }
 }
 
