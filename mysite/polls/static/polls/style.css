@@ -1,0 +1,14 @@
+li a {
+    color: green;
+}
+
+body {
+    background: url("images/background.jpg");
+    background-position: -300px top;
+    }
+
+div {
+    background: rgba(255,255,255,0.4);
+    display : inline-block;
+    padding: 5px;
+    }
